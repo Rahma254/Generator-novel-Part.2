@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nabila Studio - AI Creator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1 class="title">Nabila Studio 😝</h1>
+        <p class="subtitle">AI Creator for Novels and Song Lyrics</p>
+    </header>
+
+    <main>
+        <div class="generators-grid">
+            <!-- Novel Generator -->
+            <section class="card" id="novel-card">
+                <h2>Novel Generator</h2>
+                <textarea id="novel-prompt" placeholder="Masukkan sinopsis awal novelmu di sini..."></textarea>
+                <button id="generate-novel-btn">Buat Bab 1</button>
+            </section>
+
+            <!-- Lyric Generator -->
+            <section class="card" id="lyric-card">
+                <h2>Lyric Generator</h2>
+                <textarea id="lyric-prompt" placeholder="Deskripsikan lagumu (genre, tema, mood)..."></textarea>
+                <button id="generate-lyric-btn">Buat Lirik Lagu</button>
+            </section>
+        </div>
+
+        <!-- Area Hasil -->
+        <section class="result-container" id="result-container">
+            <div class="result-header">
+                <h3>Hasil Generasi:</h3>
+                <button id="copy-btn">Salin Teks</button>
+            </div>
+            <div class="result-box" id="result-box">
+                <div id="loading-spinner" class="spinner-container hidden">
+                    <div class="spinner"></div>
+                    <p>Nabila sedang berpikir...</p>
+                </div>
+                <pre id="result-output"></pre>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
